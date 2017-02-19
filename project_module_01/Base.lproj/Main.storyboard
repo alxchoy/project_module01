@@ -24,9 +24,9 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8dn-tv-g31" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="492" y="244"/>
+            <point key="canvasLocation" x="492" y="242"/>
         </scene>
-        <!--Modulos View Controller-->
+        <!--Módulos del Curso-->
         <scene sceneID="SMp-fW-JG9">
             <objects>
                 <viewController id="7Ct-5b-kHC" customClass="ModulosViewController" customModule="project_module_01" customModuleProvider="target" sceneMemberID="viewController">
@@ -75,6 +75,9 @@
                                                         <state key="normal" title="Ver más">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="btnFirstTouch:" destination="7Ct-5b-kHC" eventType="touchUpInside" id="PRG-m0-ovL"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.058547209730000001" green="0.15722594479999999" blue="0.56232154190000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -110,6 +113,9 @@
                                                         <state key="normal" title="Ver más">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="btnSecondTouch:" destination="7Ct-5b-kHC" eventType="touchUpInside" id="llK-Fi-HSh"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJD-zZ-Lq3">
                                                         <rect key="frame" x="16" y="53" width="351" height="80"/>
@@ -155,6 +161,9 @@
                                                         <state key="normal" title="Ver más">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="btnThirdTouch:" destination="7Ct-5b-kHC" eventType="touchUpInside" id="wPa-dJ-eIA"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxL-sN-LBw">
                                                         <rect key="frame" x="16" y="53" width="351" height="72"/>
@@ -188,8 +197,11 @@
                             <constraint firstAttribute="bottom" secondItem="UeY-Xj-gWi" secondAttribute="bottom" constant="45" id="zmk-Be-GY2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="e6E-Ry-IBF"/>
+                    <navigationItem key="navigationItem" title="Módulos del Curso" id="e6E-Ry-IBF"/>
                     <connections>
+                        <outlet property="lblFirstModule" destination="QoH-lw-1C6" id="pC7-CL-gna"/>
+                        <outlet property="lblSecondModule" destination="lJD-zZ-Lq3" id="OuH-FZ-M1H"/>
+                        <outlet property="lblThirdModule" destination="XxL-sN-LBw" id="GeB-Sj-kts"/>
                         <segue destination="xvg-pk-VOH" kind="show" identifier="moduleDisplay" id="cuh-gh-RYn"/>
                     </connections>
                 </viewController>
@@ -197,10 +209,10 @@
             </objects>
             <point key="canvasLocation" x="1261.5999999999999" y="242.42878560719643"/>
         </scene>
-        <!--View Controller-->
+        <!--Mostrar View Controller-->
         <scene sceneID="KPX-cK-l4n">
             <objects>
-                <viewController id="xvg-pk-VOH" sceneMemberID="viewController">
+                <viewController id="xvg-pk-VOH" customClass="MostrarViewController" customModule="project_module_01" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vs4-p2-dGA"/>
                         <viewControllerLayoutGuide type="bottom" id="MDB-Lu-E5p"/>
@@ -209,16 +221,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvR-Ug-dvc">
-                                <rect key="frame" x="16" y="105" width="343" height="106"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvR-Ug-dvc">
+                                <rect key="frame" x="16" y="105" width="343" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="txtMostrar" destination="XvR-Ug-dvc" id="sGS-LD-hHG"/>
+                        <outlet property="vista" destination="Psk-ya-7kI" id="2gK-zX-8Pm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhn-re-L2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
