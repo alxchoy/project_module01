@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="492" y="244"/>
         </scene>
-        <!--View Controller-->
+        <!--Modulos View Controller-->
         <scene sceneID="SMp-fW-JG9">
             <objects>
-                <viewController id="7Ct-5b-kHC" sceneMemberID="viewController">
+                <viewController id="7Ct-5b-kHC" customClass="ModulosViewController" customModule="project_module_01" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nkg-tH-Slu"/>
                         <viewControllerLayoutGuide type="bottom" id="zKi-Eh-rMt"/>
@@ -189,15 +189,45 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="e6E-Ry-IBF"/>
+                    <connections>
+                        <segue destination="xvg-pk-VOH" kind="show" identifier="moduleDisplay" id="cuh-gh-RYn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Yo-L7-DjS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1261.5999999999999" y="242.42878560719643"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="KPX-cK-l4n">
+            <objects>
+                <viewController id="xvg-pk-VOH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vs4-p2-dGA"/>
+                        <viewControllerLayoutGuide type="bottom" id="MDB-Lu-E5p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Psk-ya-7kI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvR-Ug-dvc">
+                                <rect key="frame" x="16" y="105" width="343" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhn-re-L2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1992.8" y="242.42878560719643"/>
+        </scene>
         <!--Datos-->
         <scene sceneID="LW5-ct-tGJ">
             <objects>
-                <viewController id="oy6-T7-gED" sceneMemberID="viewController">
+                <viewController id="oy6-T7-gED" customClass="DatosViewController" customModule="project_module_01" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CM3-mx-2EF"/>
                         <viewControllerLayoutGuide type="bottom" id="AdF-bG-RMZ"/>
@@ -228,6 +258,9 @@
                                             <segment title="Noche"/>
                                         </segments>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="sgTurnoSelected:" destination="oy6-T7-gED" eventType="valueChanged" id="WJl-2G-Xah"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <constraints>
@@ -341,6 +374,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Datos" id="8y2-al-Fgh"/>
+                    <connections>
+                        <outlet property="sldDificultad" destination="Y12-oy-PzT" id="h9T-lN-U82"/>
+                        <outlet property="txtDias" destination="9EM-Fi-2n6" id="1tp-NT-499"/>
+                        <outlet property="txtHoras" destination="JZT-HY-1gy" id="7D3-ME-B7y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KHo-eO-naU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

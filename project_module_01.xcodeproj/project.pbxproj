@@ -12,6 +12,8 @@
 		D65858CF1E58CB2700F04CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65858CD1E58CB2700F04CD7 /* Main.storyboard */; };
 		D65858D11E58CB2700F04CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65858D01E58CB2700F04CD7 /* Assets.xcassets */; };
 		D65858D41E58CB2700F04CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65858D21E58CB2700F04CD7 /* LaunchScreen.storyboard */; };
+		D65858DC1E591FC600F04CD7 /* DatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65858DB1E591FC600F04CD7 /* DatosViewController.swift */; };
+		D65858DE1E591FEB00F04CD7 /* ModulosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65858DD1E591FEB00F04CD7 /* ModulosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D65858D01E58CB2700F04CD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D65858D31E58CB2700F04CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D65858D51E58CB2700F04CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D65858DB1E591FC600F04CD7 /* DatosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatosViewController.swift; sourceTree = "<group>"; };
+		D65858DD1E591FEB00F04CD7 /* ModulosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				D65858D01E58CB2700F04CD7 /* Assets.xcassets */,
 				D65858D21E58CB2700F04CD7 /* LaunchScreen.storyboard */,
 				D65858D51E58CB2700F04CD7 /* Info.plist */,
+				D65858DB1E591FC600F04CD7 /* DatosViewController.swift */,
+				D65858DD1E591FEB00F04CD7 /* ModulosViewController.swift */,
 			);
 			path = project_module_01;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65858DE1E591FEB00F04CD7 /* ModulosViewController.swift in Sources */,
+				D65858DC1E591FC600F04CD7 /* DatosViewController.swift in Sources */,
 				D65858CC1E58CB2700F04CD7 /* ViewController.swift in Sources */,
 				D65858CA1E58CB2700F04CD7 /* AppDelegate.swift in Sources */,
 			);
