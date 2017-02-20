@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D61709931E595E2C00466D85 /* MostrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61709921E595E2C00466D85 /* MostrarViewController.swift */; };
+		D624A4461E5A6C2A007A025B /* InscripcionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624A4451E5A6C2A007A025B /* InscripcionTableViewController.swift */; };
 		D65858CA1E58CB2700F04CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65858C91E58CB2700F04CD7 /* AppDelegate.swift */; };
 		D65858CC1E58CB2700F04CD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65858CB1E58CB2700F04CD7 /* ViewController.swift */; };
 		D65858CF1E58CB2700F04CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65858CD1E58CB2700F04CD7 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		D61709921E595E2C00466D85 /* MostrarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostrarViewController.swift; sourceTree = "<group>"; };
+		D624A4451E5A6C2A007A025B /* InscripcionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InscripcionTableViewController.swift; sourceTree = "<group>"; };
 		D65858C61E58CB2700F04CD7 /* project_module_01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project_module_01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65858C91E58CB2700F04CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D65858CB1E58CB2700F04CD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				D65858DB1E591FC600F04CD7 /* DatosViewController.swift */,
 				D65858DD1E591FEB00F04CD7 /* ModulosViewController.swift */,
 				D61709921E595E2C00466D85 /* MostrarViewController.swift */,
+				D624A4451E5A6C2A007A025B /* InscripcionTableViewController.swift */,
 			);
 			path = project_module_01;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				D65858DC1E591FC600F04CD7 /* DatosViewController.swift in Sources */,
 				D65858CC1E58CB2700F04CD7 /* ViewController.swift in Sources */,
 				D65858CA1E58CB2700F04CD7 /* AppDelegate.swift in Sources */,
+				D624A4461E5A6C2A007A025B /* InscripcionTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

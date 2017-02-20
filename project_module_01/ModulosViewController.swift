@@ -48,14 +48,12 @@ class ModulosViewController: UIViewController {
         self.performSegue(withIdentifier: "moduleDisplay", sender: sender)
     }
     
-    
     @IBAction func btnSecondTouch(_ sender: UIButton) {
         
         parametro = lblSecondModule.text
         color = UIColor(red: 0, green: 122/255.0, blue: 1, alpha: 1)
         self.performSegue(withIdentifier: "moduleDisplay", sender: sender)
     }
-    
     
     @IBAction func btnThirdTouch(_ sender: UIButton) {
         
