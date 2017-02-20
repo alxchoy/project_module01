@@ -1,6 +1,6 @@
 # project_module01
 
-Este es el proyecto final del módulo 01 del curso iOS, desarrollando en Área51
+Este es el proyecto final del módulo 01 del curso iOS, desarrollado en Área51
 
 Los temas vistos en este módulo fueron:
 - Fundamentos de Swift 3
